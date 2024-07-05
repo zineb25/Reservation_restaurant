@@ -1,0 +1,21 @@
+<!-- tables.component.html -->
+<div class="container">
+    <h2>Tables Disponibles</h2>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Numéro</th>
+            <th>Nombre de Sièges</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let table of tables">
+            <td>{{ table.number }}</td>
+            <td>{{ table.seats }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
